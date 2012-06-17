@@ -1,0 +1,254 @@
+--- 
+f: &1 
+  entry: 
+    answer: answer
+    question: question
+  name: Final
+finalRound: *1
+rounds: 
+  - 
+    categories: 
+      - 
+        entries: 
+          - 
+            answer: answer
+            question: question
+          - 
+            answer: answer
+            question: question
+          - 
+            answer: answer
+            question: question
+          - 
+            answer: answer
+            question: question
+          - 
+            answer: answer
+            question: question
+        name: Single A
+        values: 
+          - "100"
+          - "200"
+          - "300"
+          - "400"
+          - "500"
+      - 
+        entries: 
+          - 
+            answer: answer
+            question: question
+          - 
+            answer: answer
+            question: question
+          - 
+            answer: answer
+            question: question
+          - 
+            answer: answer
+            question: question
+          - 
+            answer: answer
+            question: question
+        name: Single B
+        values: 
+          - "100"
+          - "200"
+          - "300"
+          - "400"
+          - "500"
+      - 
+        entries: 
+          - 
+            answer: answer
+            question: question
+          - 
+            answer: answer
+            question: question
+          - 
+            answer: answer
+            question: question
+          - 
+            answer: answer
+            question: question
+          - 
+            answer: answer
+            question: question
+        name: Single C
+        values: 
+          - "100"
+          - "200"
+          - "300"
+          - "400"
+          - "500"
+      - 
+        entries: 
+          - 
+            answer: answer
+            question: question
+          - 
+            answer: answer
+            question: question
+          - 
+            answer: answer
+            question: question
+          - 
+            answer: answer
+            question: question
+          - 
+            answer: answer
+            question: question
+        name: Single D
+        values: 
+          - "100"
+          - "200"
+          - "300"
+          - "400"
+          - "500"
+      - 
+        entries: 
+          - 
+            answer: answer
+            question: question
+          - 
+            answer: answer
+            question: question
+          - 
+            answer: answer
+            question: question
+          - 
+            answer: answer
+            question: question
+          - 
+            answer: answer
+            question: question
+        name: Single E
+        values: 
+          - "100"
+          - "200"
+          - "300"
+          - "400"
+          - "500"
+    name: Single Jeopardy
+  - 
+    categories: 
+      - 
+        entries: 
+          - 
+            answer: answer
+            question: question
+          - 
+            answer: answer
+            question: question
+          - 
+            answer: answer
+            question: question
+          - 
+            answer: answer
+            question: question
+          - 
+            answer: answer
+            question: question
+        name: Double A
+        values: 
+          - "200"
+          - "400"
+          - "600"
+          - "800"
+          - "1000"
+      - 
+        entries: 
+          - 
+            answer: answer
+            question: question
+          - 
+            answer: answer
+            question: question
+          - 
+            answer: answer
+            question: question
+          - 
+            answer: answer
+            question: question
+          - 
+            answer: answer
+            question: question
+        name: Double B
+        values: 
+          - "200"
+          - "400"
+          - "600"
+          - "800"
+          - "1000"
+      - 
+        entries: 
+          - 
+            answer: answer
+            question: question
+          - 
+            answer: answer
+            question: question
+          - 
+            answer: answer
+            question: question
+          - 
+            answer: answer
+            question: question
+          - 
+            answer: answer
+            question: question
+        name: Double C
+        values: 
+          - "200"
+          - "400"
+          - "600"
+          - "800"
+          - "1000"
+      - 
+        entries: 
+          - 
+            answer: answer
+            question: question
+          - 
+            answer: answer
+            question: question
+          - 
+            answer: answer
+            question: question
+          - 
+            answer: answer
+            question: question
+          - 
+            answer: answer
+            question: question
+        name: Double D
+        values: 
+          - "200"
+          - "400"
+          - "600"
+          - "800"
+          - "1000"
+      - 
+        entries: 
+          - 
+            answer: answer
+            question: question
+          - 
+            answer: answer
+            question: question
+          - 
+            answer: answer
+            question: question
+          - 
+            answer: answer
+            question: question
+          - 
+            answer: answer
+            question: question
+        name: Double E
+        values: 
+          - "200"
+          - "400"
+          - "600"
+          - "800"
+          - "1000"
+    name: Double Jeopardy
