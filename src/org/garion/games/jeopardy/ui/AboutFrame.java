@@ -21,7 +21,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
 import java.io.IOException;
-import java.net.MalformedURLException;
 import javax.swing.*;
 import org.garion.global.Global;
 import org.garion.global.ui.UI;
