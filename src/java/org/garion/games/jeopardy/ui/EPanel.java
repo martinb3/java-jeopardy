@@ -17,6 +17,8 @@
 package org.garion.games.jeopardy.ui;
 
 import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Font;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import javax.swing.*;
@@ -63,12 +65,15 @@ public class EPanel extends JPanel {
 	public EPanel( String text, Category c, Entry e, BoardPanel bp ) {
 		super( new BorderLayout() );
 		label = new JLabel( text, JLabel.CENTER );
+		label.setFont( Font.decode( "Arial-BOLD-18" ) );
+		label.setForeground(Color.WHITE);
 		this.c = c;
 		this.e = e;
 		this.bp = bp;
 		add( label, BorderLayout.CENTER );
 		addMouseListener( adapter );
 		setBorder( BorderFactory.createBevelBorder( BevelBorder.LOWERED ) );
+		setBackground(Color.BLUE);
 	}
 
 	/**

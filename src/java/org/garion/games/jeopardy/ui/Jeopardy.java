@@ -22,6 +22,7 @@ import java.io.File;
 import javax.swing.*;
 import org.garion.games.jeopardy.Game;
 import org.garion.games.jeopardy.util.Const;
+import org.garion.games.jeopardy.util.ExternalPlayerReader;
 import org.garion.games.jeopardy.util.IO;
 import org.garion.games.jeopardy.util.builder.GameBuilder;
 import org.garion.games.scorecard.Scorecard;
@@ -39,7 +40,7 @@ public class Jeopardy {
 	private JFrame frame;
 	private JPanel main;
 
-	private BoardPanel boardPanel;
+	private final BoardPanel boardPanel;
 
 	private JMenuBar menuBar;
 	private JMenu gameMenu;
@@ -58,15 +59,21 @@ public class Jeopardy {
 	 */
 	public Jeopardy() {
 		Global.setSystemUI();
+		
 		game = null;
 		frame = new JFrame( "Jeopardy" );
 		frame.setDefaultCloseOperation( JFrame.EXIT_ON_CLOSE );
 		main = new JPanel( new BorderLayout() );
 		boardPanel = new BoardPanel();
+		
+		// start delivering serial events to the BoardPanel (in a sep. thread)
+		new Thread(new ExternalPlayerReader(boardPanel)).start();
+		
 		createMenuBar();
 		chooser = new JFileChooser();
 		chooser.setMultiSelectionEnabled( false );
 		chooser.setFileFilter( IO.ext );
+		
 		main.add( boardPanel, BorderLayout.CENTER );
 		main.setBorder( BorderFactory.createEmptyBorder( 5, 5, 5, 5 ) );
 		frame.getContentPane().add( main );

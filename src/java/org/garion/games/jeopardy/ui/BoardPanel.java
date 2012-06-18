@@ -20,8 +20,10 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.*;
+
 import org.garion.games.jeopardy.*;
 import org.garion.games.jeopardy.util.Const;
+import org.garion.games.jeopardy.util.ExternalPlayerController;
 
 /**
  * Panel to display a jeopardy game
@@ -30,7 +32,7 @@ import org.garion.games.jeopardy.util.Const;
  * @version 1.0 (7 May 2010)
  */
 @SuppressWarnings( "serial" )
-public class BoardPanel extends JPanel implements ActionListener {
+public class BoardPanel extends JPanel implements ActionListener, ExternalPlayerController {
 
 	/** Panel name for the grid panel */
 	public static final String GRID = "GRID";
@@ -55,6 +57,7 @@ public class BoardPanel extends JPanel implements ActionListener {
 	private JPanel entry;
 	private JLabel entryCat;
 	private JLabel entryVal;
+	private JLabel playerVal;
 	private JLabel entryAns;
 	private String entryQu;
 	private JButton respond;
@@ -114,20 +117,37 @@ public class BoardPanel extends JPanel implements ActionListener {
 		JPanel info = new JPanel();
 		BoxLayout horiz = new BoxLayout( info, BoxLayout.X_AXIS );
 		info.setLayout( horiz );
+		
 		entryCat = new JLabel( "", JLabel.LEFT );
 		entryCat.setFont( Font.decode( "Arial-BOLD-18" ) );
+		
 		entryVal = new JLabel( "", JLabel.RIGHT );
 		entryVal.setFont( Font.decode( "Arial-BOLD-18" ) );
+
+		playerVal = new JLabel( "", JLabel.CENTER );
+		playerVal.setFont( Font.decode( "Arial-BOLD-38" ) );
+		playerVal.setForeground(Color.RED);
+		
+		
 		info.add( entryCat );
 		info.add( Box.createHorizontalGlue() );
 		info.add( entryVal );
+		
 		entryAns = new JLabel( "", JLabel.CENTER );
 		entryAns.setFont( Font.decode( "Arial-BOLD-24" ) );
 		entry.add( info, BorderLayout.NORTH );
 		entry.add( entryAns, BorderLayout.CENTER );
+		
 		respond = new JButton( "Question" );
 		respond.addActionListener( this );
-		entry.add( respond, BorderLayout.SOUTH );
+		
+		//entry.add( respond, BorderLayout.SOUTH );
+		
+		JPanel jp = new JPanel(new BorderLayout());
+		jp.add(respond, BorderLayout.SOUTH); jp.add(playerVal, BorderLayout.NORTH);
+		
+		entry.add( jp, BorderLayout.SOUTH );
+
 		add( entry, ENTRY );
 	}
 
@@ -250,6 +270,7 @@ public class BoardPanel extends JPanel implements ActionListener {
 		entryCat.setText( c.getName() );
 		entryVal.setText( "$" + c.getValue( e ) );
 		entryAns.setText( "<html>" + e.getAnswer() + "</html>" );
+		playerVal.setText("");
 		entryQu = e.getQuestion();
 		showPanel( ENTRY );
 	}
@@ -266,6 +287,17 @@ public class BoardPanel extends JPanel implements ActionListener {
 			respond.setText( "Question" );
 			showPanel( GRID );
 		}
+	}
+
+	@Override
+	public void resetPlayer() {
+		playerVal.setText("");
+	}
+
+	@Override
+	public void signalPlayer(String name) {
+		java.awt.Toolkit.getDefaultToolkit().beep();
+		playerVal.setText(name);
 	}
 
 }

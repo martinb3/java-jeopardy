@@ -17,6 +17,7 @@
 package org.garion.games.jeopardy.ui;
 
 import java.awt.*;
+
 import javax.swing.*;
 import javax.swing.border.BevelBorder;
 import org.garion.games.jeopardy.Category;
@@ -63,9 +64,10 @@ public class CPanel extends JPanel {
 		else
 			label = new JLabel( "<html>" + c.getName() + "</html>",
 				JLabel.CENTER );
-		label.setFont( Font.decode( "Arial-BOLD-18" ) );
+		label.setFont( Font.decode( "Arial-BOLD-24" ) );
+		label.setForeground(Color.WHITE);
 		add( label, BorderLayout.CENTER );
-		setBackground( Color.LIGHT_GRAY );
+		setBackground(new Color(51, 102, 153));
 		setBorder( BorderFactory.createBevelBorder( BevelBorder.RAISED ) );
 	}
 
