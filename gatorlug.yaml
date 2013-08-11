@@ -1,0 +1,256 @@
+--- 
+f: &1 
+  entry: 
+    answer: answer
+    question: question
+  name: Final
+finalRound: *1
+rounds: 
+  - 
+    categories: 
+      - 
+        entries: 
+          - 
+            answer: "This famous movie character exclaims, \"The sum of the square roots of any two sides of an isosceles triangle is equal to the square root of the remaining side. Oh, joy! Oh, rapture! I've got a brain!\""
+            question: The Scarecrow
+          - 
+            answer: "In 1965, this stated that the number of transistors that can be placed inexpensively on an integrated circuit doubles approximately every two years."
+            question: "Moore's Law"
+          - 
+            answer: This self balancing search tree was first published by G. M. Adelson-Velskii and E. M. Landis in 1962
+            question: AVL tree
+          - 
+            answer: "He used to pay a finder’s fee of $2.56 for any typographical errors or mistakes discovered in his books, because \"256 pennies is one hexadecimal dollar\", and $0.32 for \"valuable suggestions\""
+            question: (Donald) Knuth
+          - 
+            answer: "A graph search algorithm that solves the single-source shortest path problem for a graph with nonnegative edge path costs, producing a shortest path tree"
+            question: "Djikstra's Algorithm"
+        name: How to do it
+        values: 
+          - "100"
+          - "200"
+          - "300"
+          - "400"
+          - "500"
+      - 
+        entries: 
+          - 
+            answer: "After eating a cyonide laced apple, his epitaph read:     Hyperboloids of wondrous Light / Rolling for aye through Space and Time /Harbour those Waves which somehow Might /    Play out God's holy"
+            question: Alan Turing
+          - 
+            answer: This is half of a byte
+            question: Nibble
+          - 
+            answer: This famous greek philospher was sentenenced to death by hemlock
+            question: Socrates
+          - 
+            answer: "This man is the K in 'awk'"
+            question: Brian Kernighan
+          - 
+            answer: He is known by commonly known by his username dmr.
+            question: Dennis Ritchie
+        name: Potent Potables
+        values: 
+          - "100"
+          - "200"
+          - "300"
+          - "400"
+          - "500"
+      - 
+        entries: 
+          - 
+            answer: "Founded in 1947, this is the world's largest and most prestigious scientific and educational computing science."
+            question: ACM (Association for Computing Machinery)
+          - 
+            answer: This is the year that ARPAnet became first operational.
+            question: "1964"
+          - 
+            answer: "His famous thorem states that for any self-consistent recursive axiomatic system powerful enough to describe the arithmetic of the natural numbers, there are true propositions about the naturals that cannot be proved from the axioms."
+            question: Kurt Goedel
+          - 
+            answer: "In 2002, he received the ACM PODC Influential Paper Award in distributed computing for his work on self-stabilization of program computation"
+            question: Edsger Djikstra
+          - 
+            answer: He is best known for the lambda calculus and solving the Entscheidungsproblem
+            question: Alonzo Church
+        name: Before/After
+        values: 
+          - "100"
+          - "200"
+          - "300"
+          - "400"
+          - "500"
+      - 
+        entries: 
+          - 
+            answer: This is a hardware description language used in electronic design automation to describe digital and mixed-signal systems such as field-programmable gate arrays and integrated circuits.
+            question: VHDL or VHSIC hardware description language
+          - 
+            answer: "Until the early 90s this company required A dark (or gray) suit, white shirt, and a “sincere” tie"
+            question: IBM
+          - 
+            answer: This book defines the specification for computer data cd
+            question: The Yellow Book
+          - 
+            answer: "This is an idea, behavior or style that spreads from person to person within a culture."
+            question: Meme
+          - 
+            answer: "The premise behind this fad, popularized on the /sci/ (science) board of 4chan in late September of 2010, is to create pictures with such pseudo-science that one could endlessly troll their science teachers."
+            question: Troll Physics
+        name: 21st Century Literature
+        values: 
+          - "100"
+          - "200"
+          - "300"
+          - "400"
+          - "500"
+      - 
+        entries: 
+          - 
+            answer: This country was the home of Alan Turing
+            question: UK / Britain / England
+          - 
+            answer: "This state's institute of technology was where pioneer john mccarty dveloped the, \"first AI language\""
+            question: Massachusettes
+          - 
+            answer: "This state's republication senator described the internet as a series of tubes"
+            question: Alaska
+          - 
+            answer: "This city is home to an R&D company responsible for laser printing, ethernet, the modern PC, and OOP"
+            question: "Palo Alto, CA"
+          - 
+            answer: This school is home to many notable researchers such as John McCarthy and Richard Stallman
+            question: MIT
+        name: World Geography
+        values: 
+          - "100"
+          - "200"
+          - "300"
+          - "400"
+          - "500"
+    name: Single Jeopardy
+  - 
+    categories: 
+      - 
+        entries: 
+          - 
+            answer: "Midnight, January 1, 1970"
+            question: Unix epoch
+          - 
+            answer: answer
+            question: question
+          - 
+            answer: answer
+            question: question
+          - 
+            answer: answer
+            question: question
+          - 
+            answer: answer
+            question: question
+        name: Curious Figures
+        values: 
+          - "200"
+          - "400"
+          - "600"
+          - "800"
+          - "1000"
+      - 
+        entries: 
+          - 
+            answer: This factorizes a matrix as the product of a lower triangular matrix and an upper triangular matrix
+            question: LU factorisation or decomposition
+          - 
+            answer: This is the statement that differentiation and integration are inverse operations
+            question: Fundamental Thorem of Calculus
+          - 
+            answer: This asks asks whether every problem whose solution can be quickly verified by a computer can also be quickly solved by a computer.
+            question: P=NP
+          - 
+            answer: "He also introduced much of the modern mathematical terminology and notation, particularly for mathematical analysis, such as the notion of a mathematical function."
+            question: Leonard Euler
+          - 
+            answer: "In mathematics, this is a representation of a function as an infinite sum of terms that are calculated from the values of the function's derivatives at a single point."
+            question: Taylor series
+        name: dx = v(t) dt
+        values: 
+          - "200"
+          - "400"
+          - "600"
+          - "800"
+          - "1000"
+      - 
+        entries: 
+          - 
+            answer: answer
+            question: question
+          - 
+            answer: answer
+            question: question
+          - 
+            answer: answer
+            question: question
+          - 
+            answer: answer
+            question: question
+          - 
+            answer: answer
+            question: question
+        name: Double C
+        values: 
+          - "200"
+          - "400"
+          - "600"
+          - "800"
+          - "1000"
+      - 
+        entries: 
+          - 
+            answer: answer
+            question: question
+          - 
+            answer: answer
+            question: question
+          - 
+            answer: answer
+            question: question
+          - 
+            answer: answer
+            question: question
+          - 
+            answer: answer
+            question: question
+        name: Double D
+        values: 
+          - "200"
+          - "400"
+          - "600"
+          - "800"
+          - "1000"
+      - 
+        entries: 
+          - 
+            answer: answer
+            question: question
+          - 
+            answer: answer
+            question: question
+          - 
+            answer: answer
+            question: question
+          - 
+            answer: answer
+            question: question
+          - 
+            answer: answer
+            question: question
+        name: Double E
+        values: 
+          - "200"
+          - "400"
+          - "600"
+          - "800"
+          - "1000"
+    name: Double Jeopardy
+subject: "Linux, Computers, Nerds"
+title: GatorLUG Jeopardy
